@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Launch</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.display-4 {
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #f8f9fa;
+  color: #333;
+  border-color: transparent;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(248, 249, 250, 0.8);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: none;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Animation for button hover */
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.btn-primary:hover::after {
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.img-fluid {
+  max-width: 200px; /* Adjust size as needed */
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center mt-5" style="padding: 50px;">
+        <img src="logo.png" alt="Logo" class="img-fluid mb-4"height="60%">
+        <h1 class="display-4 mb-0">Welcome to Our Website Launch</h1>
+        <p class="lead">Exciting things are coming! Stay tuned for the big reveal !</p>
+        <button id="launchButton" class="btn btn-primary btn-lg mt-4">Launch Website</button>
+        <p class="footer" style="margin-top: 100px; margin-bottom: 0;">Desig & Developed by Coda Studios</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Example script for button click event
+    document.getElementById('launchButton').addEventListener('click', function() {
+    // Replace with actual launch functionality
+   window.location.href = 'https://well-erectors-demo.vercel.app/index.html';
+    });
+  </script>
+</body>
+</html>
